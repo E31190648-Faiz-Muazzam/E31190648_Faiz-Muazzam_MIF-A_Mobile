@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".BuatBiodata">
+<!--Membuat komponen textview untuk label mengisi nomor-->
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nomor"/>
+<!--Membuat komponen editText untuk input nomor-->
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textview1"
+        android:layout_below="@id/textview1"
+        android:inputType="number"
+        android:maxLength="10">
+        <requestFocus/>
+    </EditText>
+<!--membuat komponen textView sebagai label nama-->
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="10dp"
+        android:text="Nama"/>
+<!--membuat komponen editText sebagai input nama-->
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textview2"
+        android:layout_below="@id/textview2"
+        android:inputType="text"
+        android:maxLength="20"/>
+<!--membuat komponen textView sebagai label tanggal lahir-->
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="10dp"
+        android:text="Tanggal Lahir"/>
+<!--membuat komponen edit text sebagai input tanggal lahir-->
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textview2"
+        android:layout_below="@id/textview3"
+        android:inputType="text"/>
+    <!--membuat komponen textView sebagai label Jenis Kelamin-->
+    <TextView
+        android:id="@+id/textview4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="10dp"
+        android:text="Jenis Kelamin"/>
+    <!--membuat komponen edit text sebagai input jenis Kelamin-->
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textview4"
+        android:layout_below="@id/textview4"
+        android:inputType="text"
+        android:maxLength="1"
+        android:layout_marginTop="10dp"
+        android:hint="L atau P"/>
+    <!--membuat komponen textView sebagai label Alamat-->
+    <TextView
+        android:id="@+id/textview5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="10dp"
+        android:text="Alamat"/>
+    <!--membuat komponen edit text sebagai input Alamat-->
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textview5"
+        android:layout_below="@id/textview5"
+        android:maxLength="100"
+        android:inputType="text"/>
+<!--Membuat komponen button yang berfungsi untuk menyimpan data-->
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editText5"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:drawableLeft="@drawable/ic_done"
+        android:text="Simpan"
+        android:textColor="#000000"/>
+    <!--Membuat komponen button yang berfungsi untuk kembali kehalamn MainActivity-->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        style="?android:attr/borderlessButtonStyle"
+        android:drawableLeft="@drawable/ic_arrow"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/editText5"
+        android:layout_alignEnd="@id/editText5"
+        android:textColor="@color/black"/>
+
+
+
+
+</RelativeLayout>
